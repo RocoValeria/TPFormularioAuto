@@ -1,0 +1,42 @@
+<form [formGroup]="autoForm" name="autoForm">
+
+    <div>
+        <label>MARCA</label>
+    </div>
+
+    <input type="text" placeholder="Digite La Marca" formControlName="marca"><br>
+
+    <div>
+       
+        <label>COLOR</label>
+    </div>
+    
+    <input type="text" placeholder="Digite El Color" formControlName="color"><br>
+  
+    <div>
+        <label>MODELO</label>
+    </div>
+
+    <input type="text" placeholder="IDigite El Modelo" formControlName="modelo"><br>
+    
+    <div>
+        <label>PATENTE</label>
+    </div>
+
+    <input type="text" placeholder="Digite La Patente" formControlName="patente"><br>
+    <br>
+   
+    <button (click)="cambiarDatos()">Cambiar Datos</button>
+    <button (click)="cambiarColor()">Cambiar Color</button>
+    
+    <p>Un cambio</p>
+    <p>Otro cambio pero en la rama-1</p>
+    
+    <div>
+
+        <p>Cambio 1</p>
+        Form Auto: {{autoForm.value | json}}
+    </div>
+    
+
+</form>
